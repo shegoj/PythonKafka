@@ -10,7 +10,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh "ls -ltr"
 		sh "pwd"
-                sh  "id"
+                sh  "date"
 
             }
         }
