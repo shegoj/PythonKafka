@@ -3,6 +3,9 @@ pipeline {
 
     stages {
         stage('Terraform Code Download') {
+            when {
+             branch "queue"
+	    }
             steps {
                 // Get our terraform code from repo
                 git 'https://github.com/shegoj/devopsbootcamp2021.git'
